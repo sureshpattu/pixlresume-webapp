@@ -28,7 +28,6 @@ class MyApp extends App {
   render() {
     // pageProps that were returned  from 'getInitialProps' are stored in the props i.e. pageprops
     const {Component, pageProps, store} = this.props;
-
     return (
       <Provider store={store}>
         <Component {...pageProps}/>

@@ -28,7 +28,6 @@ class LoginActions {
         dispatch(this.afterLogin(apiRes));
       }).catch((error) => {
         console.log(error);
-        alert(error.message);
         dispatch(this.afterLogin({}));
       });
     };

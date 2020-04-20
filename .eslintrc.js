@@ -50,10 +50,14 @@ module.exports = {
     'babel/semi': 1,
     'no-invalid-this': 0,
     'babel/no-invalid-this': 1,
+    'react/react-in-jsx-scope': 'off',
   },
   'settings': {
     'react': {
       'version': '15.3',
     },
+  },
+  'globals': {
+    'React': 'writable',
   },
 };
