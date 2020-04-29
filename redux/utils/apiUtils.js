@@ -36,6 +36,7 @@ class AjaxUtils {
       timeout: timeout,
       data: data ? JSON.stringify(data) : null,
       contentType: contentType,
+      crossDomain: true,
       beforeSend: function(xhr) {
         if (showLoader === true) {
           store.dispatch(LoaderActions.showLoader());
